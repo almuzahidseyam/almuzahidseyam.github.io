@@ -1,26 +1,19 @@
-# almuzahidseyam.github.io — LinkedIn-ready gateway
+# Muhammad Al-Muzahid — Public Portfolio Gateway
 
-This package replaces the zero-second redirect with a public, crawlable portfolio gateway. The detailed Firebase portfolio remains private and opens only after the visitor clicks the button.
+Public, crawlable GitHub Pages gateway for Muhammad Al-Muzahid. The page presents a concise professional overview and links to the invitation-only detailed portfolio, GitHub and LinkedIn.
 
-## Publish
+## Live site
 
-1. Open the `almuzahidseyam.github.io` repository.
-2. Delete the old redirect files from the repository root.
-3. Upload every file and the `assets` folder from this package to the repository root.
-4. Commit the changes.
-5. In **Settings → Pages**, use `main` and `/ (root)`.
-6. Wait for the Pages deployment to finish.
+https://almuzahidseyam.github.io/
 
-## Refresh LinkedIn
+## Design and metadata
 
-1. Open LinkedIn Post Inspector.
-2. Inspect `https://almuzahidseyam.github.io/`.
-3. Confirm that the title, description, and 1200×627 preview image appear.
-4. Return to Profile → Featured → Add a link and enter the same URL.
+- Canonical Area 52 icon and favicon synchronized with the detailed portfolio.
+- Responsive, accessible single-page gateway with no framework or external runtime dependency.
+- Search-friendly Person structured data, canonical URL, sitemap and public indexing rules.
+- 1200 × 630 social-preview image for LinkedIn, Facebook, messaging apps and X.
+- Referral link retains `github_pages` attribution while anonymous gateway views remain outside private Firebase analytics.
 
-Do not restore the old zero-second meta refresh or `noindex,nofollow` tag; either can prevent social crawlers from validating the page.
+## Publishing
 
-
-## Source attribution
-
-The **Open private portfolio** button includes UTM parameters so Portfolio v1.6.2 can label signed-in sessions and approved views as coming from `github_pages`. Anonymous gateway views remain outside the private Firebase analytics.
+GitHub Pages serves the `main` branch from the repository root. Keep `.nojekyll`, `index.html`, `404.html`, `robots.txt`, `sitemap.xml`, `site.webmanifest` and the `assets/` directory together.

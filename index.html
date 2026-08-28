@@ -6,7 +6,7 @@
   <title>Muhammad Al-Muzahid — Computer Science, ICT & Research</title>
   <meta name="description" content="Public portfolio gateway for Muhammad Al-Muzahid — computer science and ICT professional, software engineer, researcher, former lecturer and competitive programmer from Bangladesh." />
   <meta name="author" content="Muhammad Al-Muzahid" />
-  <meta name="theme-color" content="#f6f6f3" />
+  <meta name="theme-color" content="#ffffff" />
   <meta name="color-scheme" content="light" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://almuzahidseyam.github.io/" />
@@ -68,18 +68,18 @@
      */
     :root {
       color-scheme: light;
-      --bg: #f6f6f3;
+      --bg: #ffffff;
       --surface: #ffffff;
-      --surface-sunken: #f1f1ec;
-      --text: #191b19;
-      --muted: #666e69;
-      --faint: #8b938d;
-      --line: rgba(25, 35, 30, .11);
-      --line-strong: rgba(25, 35, 30, .2);
-      --accent: #12674e;
-      --accent-strong: #0d5340;
-      --accent-soft: #e7f1ec;
-      --shadow: 0 1px 2px rgba(20, 30, 25, .04), 0 10px 30px rgba(20, 30, 25, .055);
+      --surface-sunken: #f7f7f7;
+      --text: #111111;
+      --muted: #555555;
+      --faint: #6b6b6b;
+      --line: #e5e5e5;
+      --line-strong: #cfcfcf;
+      --accent: #c1121f;
+      --accent-strong: #9d0e19;
+      --accent-soft: #fdeaec;
+      --shadow: 0 1px 2px rgba(17, 17, 17, .04), 0 8px 24px rgba(17, 17, 17, .06);
     }
 
     * { box-sizing: border-box; }
@@ -106,7 +106,7 @@
       z-index: 10;
       padding: 10px 15px;
       border: 1px solid var(--line-strong);
-      border-radius: 10px;
+      border-radius: 8px;
       color: var(--text);
       background: var(--surface);
       font-size: .82rem;
@@ -127,7 +127,7 @@
       align-items: center;
       padding: clamp(28px, 4.5vw, 52px);
       border: 1px solid var(--line);
-      border-radius: 20px;
+      border-radius: 16px;
       background: var(--surface);
       box-shadow: var(--shadow);
       overflow: hidden;
@@ -168,6 +168,9 @@
 
     .lede {
       max-width: 34em;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
       margin: 18px 0 0;
       color: var(--muted);
       font-size: 1.03rem;
@@ -202,7 +205,7 @@
       gap: 8px;
       padding: 0 20px;
       border: 1px solid transparent;
-      border-radius: 10px;
+      border-radius: 8px;
       font-size: .9rem;
       font-weight: 600;
       text-decoration: none;
@@ -227,7 +230,7 @@
       position: relative;
       padding: 0;
       border: 0;
-      border-radius: 20px;
+      border-radius: 16px;
       background: none;
       box-shadow: none;
     }
@@ -237,7 +240,7 @@
       aspect-ratio: 4 / 5;
       object-fit: cover;
       object-position: center 38%;
-      border-radius: 20px;
+      border-radius: 16px;
       background: var(--surface-sunken);
       box-shadow: var(--shadow);
     }
@@ -267,7 +270,7 @@
       margin-top: 12px;
       padding: 12px 15px;
       border: 1px solid var(--line);
-      border-radius: 14px;
+      border-radius: 12px;
       color: var(--muted);
       background: var(--surface-sunken);
       backdrop-filter: none;
@@ -286,6 +289,7 @@
 
     @media (max-width: 850px) {
       body { padding: 20px 16px; }
+      .lede { text-align: left; hyphens: none; }
       .gateway { grid-template-columns: 1fr; gap: 32px; border-radius: 16px; }
       .copy { text-align: left; }
       .brand { justify-content: flex-start; }

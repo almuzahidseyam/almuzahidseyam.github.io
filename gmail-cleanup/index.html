@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>n8n Gmail Cleanup Personal — Muhammad Al-Muzahid</title>
+  <meta name="description" content="A personal, locally hosted n8n workflow that conservatively moves old, reviewed marketing email to Gmail Trash.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://almuzahidseyam.github.io/gmail-cleanup/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header>
+      <a class="brand" href="/" aria-label="Muhammad Al-Muzahid home"><img src="/assets/area52-icon.png" alt="" width="38" height="38"><span>AREA 52<small>Muhammad Al-Muzahid</small></span></a>
+      <nav aria-label="App pages"><a href="./" aria-current="page">Overview</a><a href="privacy.html">Privacy</a></nav>
+    </header>
+    <main id="main">
+      <p class="eyebrow">Personal automation · Local processing</p>
+      <h1>n8n Gmail Cleanup Personal</h1>
+      <p class="intro">A personal workflow operated by Muhammad Al-Muzahid to keep his own Gmail account manageable. It checks old email from reviewed marketing senders and moves eligible messages to Trash.</p>
+      <div class="note"><p><strong>Personal use only.</strong> This is documentation for the owner’s local automation. This website does not offer Gmail sign-in, connect visitors’ accounts, or display mailbox data.</p></div>
+      <div class="grid">
+        <section class="card"><h2>How cleanup works</h2><p>The local n8n workflow runs every three days at 03:00 in Asia/Dhaka while the owner’s computer is awake. It considers read messages at least 30 days old from explicitly reviewed bulk senders.</p></section>
+        <section class="card"><h2>Careful selection</h2><p>Unread, starred, important, custom-labeled, attachment-bearing and conversational messages are preserved. Rules also preserve messages with potentially important financial, security, education, career and transactional signals.</p></section>
+      </div>
+      <h2>What changes in Gmail</h2>
+      <p>Only individual messages that pass all selection checks are moved to Trash. The workflow does not permanently delete mail. Gmail normally permanently deletes messages after 30 days in Trash; the owner can restore them before then.</p>
+      <p>Classification uses conservative rules, rather than an AI service. Ambiguous messages are kept. These rules reduce mistakes but cannot guarantee perfect judgment; the owner should review Trash and adjust the policy when needed.</p>
+      <h2>Google access</h2>
+      <p>The owner authorizes the local application through Google OAuth with the <code>gmail.modify</code> scope. This permission allows reading and modifying email and also permits composing and sending mail. The configured workflow uses it only to check the account, read message metadata and move selected messages to Trash.</p>
+      <p>The workflow checks the connected account before processing and stops if it is not the owner’s configured account. Mail processing runs locally; this public website is separate from n8n.</p>
+      <p><a class="button" href="privacy.html">Read the privacy policy</a></p>
+      <h2>Owner and contact</h2>
+      <address>Muhammad Al-Muzahid<br><a href="mailto:almuzahid16@gmail.com">almuzahid16@gmail.com</a></address>
+      <p class="date">Updated 23 October 2026 · Independent personal project; not affiliated with or endorsed by Google or n8n.</p>
+    </main>
+    <footer><span>© Muhammad Al-Muzahid</span><a href="/">Public portfolio</a><a href="privacy.html">Privacy policy</a></footer>
+  </div>
+</body>
+</html>

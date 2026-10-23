@@ -23,7 +23,7 @@
       <p class="intro">A personal workflow operated by Muhammad Al-Muzahid to keep his own Gmail account manageable. It checks old email from reviewed marketing senders and moves eligible messages to Trash.</p>
       <div class="note"><p><strong>Personal use only.</strong> This is documentation for the owner’s local automation. This website does not offer Gmail sign-in, connect visitors’ accounts, or display mailbox data.</p></div>
       <div class="grid">
-        <section class="card"><h2>How cleanup works</h2><p>The local n8n workflow runs every three days at 03:00 in Asia/Dhaka while the owner’s computer is awake. It considers read messages at least 30 days old from explicitly reviewed bulk senders.</p></section>
+        <section class="card"><h2>How cleanup works</h2><p>The local n8n workflow runs once per Asia/Dhaka calendar day while the owner’s computer is awake. It checks when n8n starts and every 15 minutes, and skips further cleanup after a successful run that day. It considers read messages at least 30 days old from explicitly reviewed bulk senders.</p></section>
         <section class="card"><h2>Careful selection</h2><p>Unread, starred, important, custom-labeled, attachment-bearing and conversational messages are preserved. Rules also preserve messages with potentially important financial, security, education, career and transactional signals.</p></section>
       </div>
       <h2>What changes in Gmail</h2>

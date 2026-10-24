@@ -23,8 +23,8 @@
       <p class="intro">A personal workflow operated by Muhammad Al-Muzahid to keep his own Gmail account manageable. It checks old email from reviewed marketing senders and moves eligible messages to Trash.</p>
       <div class="note"><p><strong>Personal use only.</strong> This is documentation for the owner’s local automation. This website does not offer Gmail sign-in, connect visitors’ accounts, or display mailbox data.</p></div>
       <div class="grid">
-        <section class="card"><h2>How cleanup works</h2><p>The local n8n workflow runs once per Asia/Dhaka calendar day while the owner’s computer is awake. It checks when n8n starts and every 15 minutes, and skips further cleanup after a successful run that day. It considers read messages at least 30 days old from explicitly reviewed bulk senders.</p></section>
-        <section class="card"><h2>Careful selection</h2><p>Unread, starred, important, custom-labeled, attachment-bearing and conversational messages are preserved. Rules also preserve messages with potentially important financial, security, education, career and transactional signals.</p></section>
+        <section class="card"><h2>How cleanup works</h2><p>The local n8n workflow runs once per Asia/Dhaka calendar day while the owner’s computer is awake. It checks when n8n starts and every 15 minutes, and skips further cleanup after a successful run that day. It considers messages at least 30 days old from the owner’s selected bulk senders, including unread messages only when bulk-mail evidence and clear promotional signals are present.</p></section>
+        <section class="card"><h2>Careful selection</h2><p>Starred, important, custom-labeled, attachment-bearing and conversational messages are preserved. Unread mail is considered only from selected bulk senders and must pass the same importance checks. Rules also preserve messages with potentially important financial, security, education, career and transactional signals.</p></section>
       </div>
       <h2>What changes in Gmail</h2>
       <p>Only individual messages that pass all selection checks are moved to Trash. The workflow does not permanently delete mail. Gmail normally permanently deletes messages after 30 days in Trash; the owner can restore them before then.</p>
@@ -35,7 +35,7 @@
       <p><a class="button" href="privacy.html">Read the privacy policy</a></p>
       <h2>Owner and contact</h2>
       <address>Muhammad Al-Muzahid<br><a href="mailto:almuzahid16@gmail.com">almuzahid16@gmail.com</a></address>
-      <p class="date">Updated 23 October 2026 · Independent personal project; not affiliated with or endorsed by Google or n8n.</p>
+      <p class="date">Updated 24 October 2026 · Independent personal project; not affiliated with or endorsed by Google or n8n.</p>
     </main>
     <footer><span>© Muhammad Al-Muzahid</span><a href="/">Public portfolio</a><a href="privacy.html">Privacy policy</a></footer>
   </div>

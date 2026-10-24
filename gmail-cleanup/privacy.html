@@ -20,11 +20,13 @@
     <main id="main">
       <p class="eyebrow">n8n Gmail Cleanup Personal</p>
       <h1>Privacy policy</h1>
-      <p class="date">Effective 23 October 2026</p>
+      <p class="date">Updated 24 October 2026</p>
       <p class="intro">This policy describes the personal Gmail cleanup automation operated by Muhammad Al-Muzahid on his own computer for his own account. It also explains the separate public documentation pages you are reading.</p>
       <h2>Data accessed and purpose</h2>
       <p>Through Google’s Gmail API, the automation accesses the connected account’s email address, message and conversation identifiers, dates, labels, message headers such as sender and subject, bulk-mail headers, attachment indicators and message snippets when returned. It uses these data to verify the account, identify old marketing mail and apply preservation rules.</p>
       <p>The configured workflow requests conversation metadata. It does not download attachments or request complete message bodies. Metadata from other messages in a candidate’s conversation may be read so that conversations and replies can be preserved.</p>
+      <h2>Selection rules</h2>
+      <p>Cleanup considers reviewed senders and strictly qualified bulk promotions in Gmail’s Promotions, Social or Spam categories. For an unlisted sender, a marketing-style sender address, bulk-mail headers and an explicitly promotional subject are all required. Read and unread messages are checked against preservation rules for important labels, attachments, actual conversations and personal notices. The local execution state also stores the search query and next-page token to continue bounded scans; it does not grant additional Google access.</p>
       <h2>Permissions and actions</h2>
       <p>Google OAuth grants the <code>https://www.googleapis.com/auth/gmail.modify</code> scope. That scope permits reading and modifying email, including composing and sending. The configured automation uses only account checks, message listing, metadata reads and individual-message Trash actions; it does not send mail or permanently delete messages.</p>
       <p>Eligible messages are moved to Gmail Trash. Google normally permanently deletes them after 30 days in Trash. Before then, the owner can restore them in Gmail. Conservative selection rules cannot guarantee that every decision is correct.</p>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>n8n Gmail Cleanup Personal — Muhammad Al-Muzahid</title>
-  <meta name="description" content="A personal, locally hosted n8n workflow that conservatively moves old, reviewed marketing email to Gmail Trash.">
+  <meta name="description" content="A personal, locally hosted n8n workflow that conservatively moves old, clearly identified bulk marketing email to Gmail Trash.">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://almuzahidseyam.github.io/gmail-cleanup/">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -20,11 +20,11 @@
     <main id="main">
       <p class="eyebrow">Personal automation · Local processing</p>
       <h1>n8n Gmail Cleanup Personal</h1>
-      <p class="intro">A personal workflow operated by Muhammad Al-Muzahid to keep his own Gmail account manageable. It checks old email from reviewed marketing senders and moves eligible messages to Trash.</p>
+      <p class="intro">A personal workflow operated by Muhammad Al-Muzahid to keep his own Gmail account manageable. It checks old email from reviewed marketing senders and clearly promotional bulk streams, then moves eligible messages to Trash.</p>
       <div class="note"><p><strong>Personal use only.</strong> This is documentation for the owner’s local automation. This website does not offer Gmail sign-in, connect visitors’ accounts, or display mailbox data.</p></div>
       <div class="grid">
-        <section class="card"><h2>How cleanup works</h2><p>The local n8n workflow runs once per Asia/Dhaka calendar day while the owner’s computer is awake. It checks when n8n starts and every 15 minutes, and skips further cleanup after a successful run that day. It considers messages at least 30 days old from the owner’s selected bulk senders, including unread messages only when bulk-mail evidence and clear promotional signals are present.</p></section>
-        <section class="card"><h2>Careful selection</h2><p>Starred, important, custom-labeled, attachment-bearing and conversational messages are preserved. Unread mail is considered only from selected bulk senders and must pass the same importance checks. Rules also preserve messages with potentially important financial, security, education, career and transactional signals.</p></section>
+        <section class="card"><h2>How cleanup works</h2><p>The local n8n workflow runs once per Asia/Dhaka calendar day while the owner’s computer is awake. It checks when n8n starts and every 15 minutes, and skips further cleanup after a successful run that day. Bounded scans save their next page locally, so later daily runs can continue through older messages. It considers messages at least 30 days old from reviewed senders. Other bulk messages can qualify only in Promotions, Social or Spam when a marketing-style sender address, bulk-mail headers and an explicitly promotional subject all agree. Read and unread messages must pass the same preservation rules.</p></section>
+        <section class="card"><h2>Careful selection</h2><p>Starred, important, custom-labeled, attachment-bearing and conversational messages are preserved. Unlisted senders outside the strict promotional rule remain for review. Unread messages must pass the same importance checks. Rules also preserve messages with potentially important financial, security, education, career and transactional signals.</p></section>
       </div>
       <h2>What changes in Gmail</h2>
       <p>Only individual messages that pass all selection checks are moved to Trash. The workflow does not permanently delete mail. Gmail normally permanently deletes messages after 30 days in Trash; the owner can restore them before then.</p>

@@ -1,23 +1,13 @@
-# Muhammad Al-Muzahid — Public Portfolio Gateway
+# Muhammad Al-Muzahid — GitHub Pages
 
-Public, crawlable GitHub Pages gateway for Muhammad Al-Muzahid. The page presents a concise professional overview and links to the invitation-only detailed portfolio, GitHub and LinkedIn.
+The root page at https://almuzahidseyam.github.io/ redirects to the public portfolio at https://almuzahidseyam.tech/ using an HTML refresh with a visible fallback link and canonical URL. Query strings and fragments are not forwarded.
 
-## Live site
-
-https://almuzahidseyam.github.io/
-
-## Design and metadata
-
-- Canonical Area 52 icon and favicon synchronized with the detailed portfolio.
-- Responsive, accessible single-page gateway with no framework or external runtime dependency.
-- Search-friendly Person structured data, canonical URL, sitemap and public indexing rules.
-- 1200 × 630 social-preview image for LinkedIn, Facebook, messaging apps and X.
-- Referral link retains `github_pages` attribution while anonymous gateway views remain outside private Firebase analytics.
+Only the root index redirects. This is not a custom-domain or hostname-wide redirect: existing project paths, the 404 page and Gmail disclosures remain available. The private archive is separate at https://almuzahidseyam.web.app/ and is not linked or exposed by the redirect.
 
 ## Personal Gmail automation
 
-The standalone `/gmail-cleanup/` overview and `/gmail-cleanup/privacy.html` describe **n8n Gmail Cleanup Personal** for the owner's Google OAuth configuration. They share the gateway's visual identity, use no scripts, and contain no mailbox records or credentials. Gmail processing runs locally, separately from this public documentation website. Update the disclosures whenever the actual data practices change.
+The standalone `/gmail-cleanup/` overview and `/gmail-cleanup/privacy.html` describe **n8n Gmail Cleanup Personal** for the owner's Google OAuth configuration. They use no scripts and contain no mailbox records or credentials. Gmail processing runs locally, separately from this public documentation website. Update the disclosures whenever the actual data practices change.
 
 ## Publishing
 
-GitHub Pages serves the `main` branch from the repository root. Keep `.nojekyll`, `index.html`, `404.html`, `robots.txt`, `sitemap.xml`, `site.webmanifest` and the `assets/` directory together.
+GitHub Pages serves the `main` branch from the repository root. Keep `.nojekyll`, `index.html`, `404.html`, `robots.txt`, `sitemap.xml`, `site.webmanifest` and the `assets/` directory together. Do not add a CNAME: the public custom domain is hosted separately on Firebase.
